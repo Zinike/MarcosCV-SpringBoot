@@ -18,14 +18,16 @@ public class UsuarioModel implements Serializable{
     private String nombre;
     private String email;
     private String password;
+    private String fotoperfil;
 
     UsuarioModel(){}
     
-    public UsuarioModel(Long id, String nombre, String email, String password) {
+    public UsuarioModel(Long id, String nombre, String email, String password, String fotoperfil) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
         this.password = password;
+        this.fotoperfil = fotoperfil;
     }
 
 
@@ -68,7 +70,13 @@ public class UsuarioModel implements Serializable{
         this.password = password;
     }
 
+    public String getFotoperfil() {
+        return fotoperfil;
+    }
 
-    
+
+    public void setFotoperfil(String fotoperfil) {
+        this.fotoperfil = fotoperfil;
+    }   
 
 }
