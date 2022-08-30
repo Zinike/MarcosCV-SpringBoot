@@ -1,0 +1,7 @@
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/controller/UsuarioController.java
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/repository/UsuarioRepository.java
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/PortfolioApplication.java
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/exceptions/UserNotFoundException.java
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/service/UsuarioService.java
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/advises/UserNotFoundAdvice.java
+/home/marcoszinga/Escritorio/portfolio/src/main/java/online/marcoszinga/portfolio/model/UsuarioModel.java
