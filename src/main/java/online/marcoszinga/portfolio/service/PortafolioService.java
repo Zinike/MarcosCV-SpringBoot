@@ -7,7 +7,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import online.marcoszinga.portfolio.exceptions.CapacidadNotFoundException;
+import online.marcoszinga.portfolio.exceptions.PortafolioNotFoundException;
 import online.marcoszinga.portfolio.model.PortafolioModel;
 import online.marcoszinga.portfolio.repository.PortafolioRepository;
 
@@ -31,7 +31,7 @@ public class PortafolioService {
     }
 
     public PortafolioModel buscarPortafolioPorId(Long id){
-        return portafolioRepository.findById(id).orElseThrow(() ->new CapacidadNotFoundException("Capacidad no encontrada"));
+        return portafolioRepository.findById(id).orElseThrow(() ->new PortafolioNotFoundException("Portafolio no encontrada"));
     }
     
     public PortafolioModel editarPortafolio(PortafolioModel portafolioModel){
