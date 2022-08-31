@@ -1,10 +1,14 @@
 package online.marcoszinga.portfolio.security;
 
+import javax.validation.constraints.Email;
+
+import org.hibernate.validator.constraints.Length;
+
 public class AuthRequest {
     @Email
-    @Lenght(min=8, max=50)
+    @Length(min=8, max=50)
     private String email;
-    @lenght(min=8, max=50)
+    @Length(min=8, max=50)
     private String password;
     
     
