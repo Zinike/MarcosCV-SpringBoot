@@ -26,9 +26,9 @@ public class LoginRepositoryTest {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String rawPassword = "12345678";
         String encodePassword = passwordEncoder.encode(rawPassword);
-        LoginModel newUser = new LoginModel("marcoszinga94@gmail.com", encodePassword);
-        LoginModel savedUser = loginRepository.save(newUser);
-        assertThat(savedUser).isNotNull();
-        assertThat(savedUser.getId()).isGreaterThan(0);
+        LoginModel newLogin = new LoginModel("marcoszinga94@gmail.com", encodePassword);
+        LoginModel savedLogin = loginRepository.save(newLogin);
+        assertThat(savedLogin).isNotNull();
+        assertThat(savedLogin.getId()).isGreaterThan(0);
     }
 }
