@@ -17,7 +17,7 @@ import online.marcoszinga.portfolio.service.CapacidadesService;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
-@RequestMapping("/capacidades")
+@RequestMapping("/api/capacidades")
 public class CapacidadesController {
 
     private final CapacidadesService capacidadesService;

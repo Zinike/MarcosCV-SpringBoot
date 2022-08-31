@@ -17,7 +17,7 @@ import online.marcoszinga.portfolio.model.PortafolioModel;
 import online.marcoszinga.portfolio.service.PortafolioService;
 
 @RestController
-@RequestMapping("/portafolio")
+@RequestMapping("/api/portafolio")
 public class PortafolioController {
     
 

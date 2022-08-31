@@ -13,7 +13,7 @@ import online.marcoszinga.portfolio.model.UsuarioModel;
 import online.marcoszinga.portfolio.service.UsuarioService;
 
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping("/api/usuario")
 public class UsuarioController {
 
     private final UsuarioService usuarioService;
