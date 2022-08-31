@@ -28,8 +28,7 @@ public class LoginModel implements UserDetails {
 
     public LoginModel(){}
     
-    public LoginModel(Integer id, String email, String password) {
-        this.id = id;
+    public LoginModel(String email, String password) {
         this.email = email;
         this.password = password;
     }
