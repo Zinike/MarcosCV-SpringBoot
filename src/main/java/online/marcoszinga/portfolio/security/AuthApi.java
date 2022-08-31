@@ -15,9 +15,9 @@ import online.marcoszinga.portfolio.security.jwt.JwtTokenUtil;
 public class AuthApi {
 
     @Autowired
-    AuthenticationManager authManager ;
+    AuthenticationManager authManager;
     @Autowired
-    JwtTokenUtil jwtTokenUtil ;
+    JwtTokenUtil jwtTokenUtil;
     @PostMapping("/api/Login")
     public ResponseEntity<?> login(@RequestBody @Valid AuthRequest request)
 
