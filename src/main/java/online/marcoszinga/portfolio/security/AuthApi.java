@@ -24,9 +24,11 @@ public class AuthApi {
     @PostMapping("/api/Login")
     public ResponseEntity<?> login(@RequestBody @Valid AuthRequest request){
         try{
-            Authentication authentication=authManager.authenticate(new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword());)
-            LoginModel user = (LoginModel) authentication.getPrincipal();
-            String accessToken = jwtTokenUtil.generateAccessToken(loginModel);
+            Authentication authentication=authManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                    request.getEmail(), request.getPassword());)
+            LoginModel loginModel = (LoginModel) authentication.getPrincipal();
+            String accessToken = jwtTokenUtil.GenerateAccessToken(loginModel);
             AuthResponse response = new AuthResponse(user.getEmail(), accessToken);
 
             return ResponseEntity.ok().body(response);        
