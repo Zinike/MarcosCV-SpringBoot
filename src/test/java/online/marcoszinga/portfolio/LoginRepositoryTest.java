@@ -24,9 +24,9 @@ public class LoginRepositoryTest {
     @Test
     public void testCreateUser(){
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        String rawPassword = "";
+        String rawPassword = "123456789";
         String encodePassword = passwordEncoder.encode(rawPassword);
-        LoginModel newLogin = new LoginModel("", encodePassword);
+        LoginModel newLogin = new LoginModel("prueba@gmail.com", encodePassword);
         LoginModel savedLogin = loginRepository.save(newLogin);
         assertThat(savedLogin).isNotNull();
         assertThat(savedLogin.getId()).isGreaterThan(0);
